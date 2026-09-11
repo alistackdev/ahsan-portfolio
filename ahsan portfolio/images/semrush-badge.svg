@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="semrushGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF642D"/>
+      <stop offset="100%" stop-color="#FF3E00"/>
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCD34D"/>
+      <stop offset="50%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background rounded card -->
+  <rect width="400" height="400" rx="32" fill="url(#bgGrad)" stroke="#334155" stroke-width="3"/>
+  <circle cx="200" cy="200" r="160" fill="none" stroke="#FF642D" stroke-opacity="0.15" stroke-width="1.5" stroke-dasharray="6 6"/>
+
+  <!-- Outer Ring with Semrush Glow -->
+  <circle cx="200" cy="150" r="85" fill="#182234" stroke="url(#semrushGrad)" stroke-width="4" filter="url(#glow)"/>
+
+  <!-- Semrush Fire Flame Icon -->
+  <path d="M200 95 C185 125, 160 145, 175 180 C185 200, 215 200, 225 180 C240 145, 215 125, 200 95 Z" fill="url(#semrushGrad)"/>
+  <path d="M200 135 C192 152, 180 162, 188 182 C194 193, 208 193, 213 182 C220 162, 208 152, 200 135 Z" fill="#FFA24C"/>
+  <circle cx="200" cy="175" r="7" fill="#FFFFFF"/>
+
+  <!-- Laurel Wreath Leaves / Badging -->
+  <path d="M110 215 C105 170, 130 140, 135 130 C132 145, 125 175, 138 205" fill="none" stroke="url(#goldGrad)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M290 215 C295 170, 270 140, 265 130 C268 145, 275 175, 262 205" fill="none" stroke="url(#goldGrad)" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Certified Label -->
+  <rect x="130" y="222" width="140" height="26" rx="13" fill="url(#goldGrad)"/>
+  <text x="200" y="239" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="800" fill="#0F172A" text-anchor="middle" letter-spacing="1.5">CERTIFIED</text>
+
+  <!-- Title and Details -->
+  <text x="200" y="280" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="19" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.5">Semrush Academy</text>
+  <text x="200" y="306" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="600" fill="#38BDF8" text-anchor="middle">AI Search Operating System</text>
+
+  <rect x="70" y="328" width="260" height="1" fill="#334155"/>
+
+  <text x="200" y="352" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" fill="#94A3B8" text-anchor="middle">Credential ID: 70a1c46bad</text>
+  <text x="200" y="372" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#10B981" text-anchor="middle">✓ Validated Through 11.08.2027</text>
+</svg>
